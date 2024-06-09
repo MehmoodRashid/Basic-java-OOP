@@ -1,0 +1,55 @@
+java
+
+
+//import java.util.Scanner;
+
+public class JARVIS {
+    public static void main(String[] args) {
+        car BMW = new car();
+        BMW.setModel("alto");
+        BMW.setEngine("V9 pro");
+        BMW.setColor("blue");
+        System.out.println("MODEL of BMW ="+BMW.getModel());
+        System.out.println("engine of BMW ="+BMW.getEngine());
+        System.out.println("color of BMW ="+BMW.getColor());
+
+
+    }
+}
+______________new_page_________________
+
+
+public class car {
+
+    private int doors;
+    private int wheels;
+    private String model ;
+    private String engine ;
+    private String color ;
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    ///// get----
+    public String getModel() {
+        return model;
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public String getColor() {
+        return color;
+    }
+}
+
